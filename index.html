@@ -360,6 +360,90 @@
 
   <p class="sign">Schwarze Garde — ein Schlag, ein Sieg.</p>
 </main>
+
+<style>
+  #date-window {
+    position:relative; z-index:2;
+    max-width:600px;
+    margin:0 auto 80px;
+    background:rgba(8,8,10,.72);
+    backdrop-filter:blur(6px);
+    -webkit-backdrop-filter:blur(6px);
+    border:1px solid rgba(255,255,255,.18);
+    border-radius:14px;
+    padding:28px 34px;
+    color:#fff;
+    font-family:'Courier New', monospace;
+    box-shadow:0 10px 34px rgba(0,0,0,.55);
+  }
+  #date-window .dw-title {
+    font-weight:bold;
+    letter-spacing:1px;
+    margin-bottom:22px;
+  }
+  #date-window .dw-row {
+    display:flex;
+    align-items:center;
+    gap:14px;
+    margin-bottom:16px;
+  }
+  #date-window .dw-date {
+    font-size:20px;
+    letter-spacing:3px;
+  }
+  #date-window .dw-line {
+    flex:1;
+    border-bottom:1px solid rgba(255,255,255,.55);
+    min-width:40px;
+  }
+  #date-window .dw-author {
+    text-align:right;
+    font-size:13px;
+    line-height:1.75;
+  }
+  #date-window .dw-role {
+    color:rgba(255,255,255,.75);
+    margin-top:4px;
+  }
+  #date-window .dw-sign-row {
+    display:flex;
+    align-items:flex-end;
+    gap:16px;
+    margin-top:26px;
+  }
+  #date-window .dw-sign-label { font-size:14px; white-space:nowrap; }
+  #date-window .dw-sign-box {
+    border-bottom:1px solid rgba(255,255,255,.8);
+    min-width:180px;
+    height:52px;
+    display:flex;
+    align-items:flex-end;
+    justify-content:center;
+  }
+  #date-window .dw-sign-name { font-size:14px; white-space:nowrap; }
+</style>
+
+<section id="date-window">
+  <div class="dw-title">Дата составления</div>
+  <div class="dw-row">
+    <span class="dw-date">24 / 11 / 2026</span>
+    <span class="dw-line"></span>
+    <span>Составлено: Чернов Аргос Александрович</span>
+  </div>
+  <div class="dw-author">
+    <div class="dw-role">[ Руководство ]</div>
+  </div>
+  <div class="dw-sign-row">
+    <span class="dw-sign-label">Подпись</span>
+    <span class="dw-sign-box">
+      <svg width="150" height="48" viewBox="0 0 150 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8 38 C 22 10, 34 6, 30 20 C 27 30, 20 40, 28 36 C 40 30, 50 14, 58 18 C 52 24, 46 36, 54 33 C 66 28, 78 12, 88 16 C 82 22, 76 36, 84 33 C 96 28, 108 14, 120 18 C 114 24, 108 38, 118 34 C 128 30, 138 20, 144 22" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" opacity=".9"/>
+        <path d="M6 41 C 40 46, 90 44, 146 36" stroke="#fff" stroke-width="1.1" stroke-linecap="round" opacity=".55"/>
+      </svg>
+    </span>
+    <span class="dw-sign-name">Чернов А А</span>
+  </div>
+</section>
 <script>
   (function () {
     var glyphs = 'ᚠᚢᚦᚨᚱᚲᚷᚹᚺᚾᛁᛃᛇᛈᛉᛊᛏᛒᛖᛗᛚᛜᛞᛟ';
